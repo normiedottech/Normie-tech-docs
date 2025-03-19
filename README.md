@@ -31,7 +31,7 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
 ## **3. Try It Yourself**
  ### **`1. Play with test enviornment`**
 
- - Go to [dev.normie.tech](https://www.dev.normie.tech) website.
+ - Go to [sandbox.normie.tech](https://sandbox.normie.tech) website.
  - Get Started by creating a dashboard page.
  - Redirect to `/dashboard` page and click on settings for a Test API.
  - If you have any questions, feel free to Contact Us.
@@ -39,16 +39,17 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
 
  ### **`2. Try API Calls`**
 
- - Make sure to create an account on [dev.normie.tech](https://www.dev.normie.tech).
+ - Make sure to create an account on [dev.normie.tech](https://www.sandbox.normie.tech).
+ - If you don't see the testnet network you are looking for reach out to us at support@normie.tech
  - Copy your projectId from the dashboard.
- - Go to [`https://api-dev.normie.tech/v1/${your_project_id}/docs`](https://api-dev.normie.tech/v1/your_project_id/docs) replace your projectId here.
- - Just like this https://api-dev.normie.tech/v1/thirdpay/docs
+ - Go to [`https://api-sandbox.normie.tech/docs`](https://api-sandbox.normie.tech/docs) replace your projectId here.
+ - If your payouts want to be in a custom smart contract, reach out to us a support@normie.tech
 
  ### **`3. Sending API Requests to your project`**
 
    - **3.1. `creating checkout`**
     
-      - Send POST request to the `api-dev.normie.tech/v1/${your_project_id}/0/checkout` by passing all required params.
+      - Send POST request to the `api-sandbox.normie.tech/v1/${your_project_id}/0/checkout` by passing all required params.
       - Here is the example params for your reference
         ```
         params: {
@@ -96,20 +97,20 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
 <br/>
 
   **3.2. `fetch all transactions`**
-  - Send GET request to the `api-dev.normie.tech/v1/${your_project_id}/transactions`  
+  - Send GET request to the `api-sandbox.normie.tech/v1/${your_project_id}/transactions`  
 <br/>
 
   **3.3. `fetch transaction by transaction_id`**
-  - Send GET request to the `api-dev.normie.tech/v1/${your_project_id}/transactions/{transaction_id}`
+  - Send GET request to the `api-sandbox.normie.tech/v1/${your_project_id}/transactions/{transaction_id}`
 
 
 ## **4.DOCS**
 
-**[https://api-dev.normie.tech/v1/{your_project_id}/docs]**
+**[https://api-sandbox.normie.tech/docs**
 
 
 
 <br/>
 
  
- ###  *** In Production make sure to use `api.normie.tech` instead of `api-dev.normie.tech`
+ ###  *** In Production make sure to use `api.normie.tech` instead of `api-sandbox.normie.tech`
