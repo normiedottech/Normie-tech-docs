@@ -106,11 +106,11 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
 
 ## **4.DOCS**
 
-**[https://api-sandbox.normie.tech/docs**
+**[https://api-sandbox.normie.tech/docs]**
 
 
 
 <br/>
 
  
- ###  *** In Production make sure to use `api.normie.tech` instead of `api-sandbox.normie.tech`
+ ***In Production make sure to use `api.normie.tech` instead of `api-sandbox.normie.tech`***
