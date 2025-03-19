@@ -106,6 +106,28 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
 
 ## **4.DOCS**
 
+
+ You can access the dashboard here: https://sandbox.normie.tech
+    API docs are available at: https://api-sandbox.normie.tech/v1/megapot/docs
+    The API base URL is: https://api-sandbox.normie.tech
+    The API key is available in the dashboard.
+
+
+
+Test PayPal Users:
+
+    Email: sb-6nlzl31897416@personal.example.com
+    Password: 2Ou^/+ir
+
+Test Cards:
+
+    American Express: 3714 4963 5398 431
+    American Express: 3766 8081 6376 961
+    Diners Club: 3625 9600 0000 04
+    Maestro: 6304 0000 0000 0000
+
+Use any CVV as a number and any future date as the expiry.
+
 **[https://api-sandbox.normie.tech/docs]**
 
 
