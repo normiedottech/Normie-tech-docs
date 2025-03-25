@@ -128,6 +128,8 @@ Test Cards:
 
 Use any CVV as a number and any future date as the expiry.
 
+In case of ***Americal Express Test Card*** use `4 digit CVV`
+
 **[https://api-sandbox.normie.tech/docs]**
 
 
