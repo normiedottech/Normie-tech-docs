@@ -32,7 +32,7 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
  ### **`1. Play with test enviornment`**
 
  - Go to [sandbox.normie.tech](https://sandbox.normie.tech) website.
- - Get Started by creating a dashboard page.
+ - Click "Get Started" to create a dashboard page.
  - Redirect to `/dashboard` page and click on settings for a Test API.
  - If you have any questions, feel free to Contact Us.
 
