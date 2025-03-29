@@ -104,7 +104,7 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
   - Send GET request to the `api-sandbox.normie.tech/v1/${your_project_id}/transactions/{transaction_id}`
 
 
-## **4.DOCS**
+## **4. Reference**
 
 
  You can access the dashboard here: https://sandbox.normie.tech
