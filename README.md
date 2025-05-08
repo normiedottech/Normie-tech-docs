@@ -103,7 +103,6 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
   **3.3. `fetch transaction by transaction_id`**
   - Send GET request to the `api-sandbox.normie.tech/v1/${your_project_id}/transactions/{transaction_id}`
 
-
 ## **4. Reference**
 
 
@@ -138,3 +137,81 @@ In case of ***Americal Express Test Card*** use `4 digit CVV`
 
  
  ***In Production make sure to use `api.normie.tech` instead of `api-sandbox.normie.tech`***
+
+## **5. Plans and Subscriptions**
+
+### **5.1 Creating a Plan**
+
+To create a subscription plan, send a POST request to `api-sandbox.normie.tech/v1/${your_project_id}/0/plan` with the following parameters:
+
+```json
+{
+  "plan": {
+    "name": "Premium Plan",
+    "description": "Access to premium features",
+    "amount": 1000,  // Amount in cents (e.g., $10.00)
+    "interval": "month",  // Can be "day", "week", "month", or "year"
+    "intervalCount": 1,  // Number of intervals between billings
+    "metadata": {
+      // Optional metadata for your plan
+    }
+  }
+}
+```
+
+The response will include:
+- Plan details
+- A subscription URL that can be used to subscribe to this plan
+
+### **5.2 Managing Plans**
+
+- **Get All Plans**: GET `api-sandbox.normie.tech/v1/${your_project_id}/0/plan`
+- **Get Specific Plan**: GET `api-sandbox.normie.tech/v1/${your_project_id}/0/plan/{planId}`
+- **Delete Plan**: DELETE `api-sandbox.normie.tech/v1/${your_project_id}/0/plan/{planId}`
+
+### **5.3 Subscriptions**
+
+#### **Creating a Subscription**
+To create a subscription, send a POST request to `api-sandbox.normie.tech/v1/${your_project_id}/0/subscription`:
+Once you have generated a plan id , you can directly send your users endpoint for them to subscribe.
+
+```json
+{
+  "planId": "your_plan_id"
+}
+```
+
+### **5.4 Subscription Checkout**
+
+To allow users to subscribe to a plan, direct them to:
+- Sandbox: `sandbox.normie.tech/checkout/subscription/<plan-id>`
+- Production: `normie.tech/checkout/subscription/<plan-id>`
+
+The checkout page will handle the subscription process and payment collection.
+
+#### **Managing Subscriptions**
+- **Get All Subscriptions**: GET `api-sandbox.normie.tech/v1/${your_project_id}/0/subscription`
+- **Get Specific Subscription**: GET `api-sandbox.normie.tech/v1/${your_project_id}/0/subscription/{subscriptionId}`
+- **Cancel Subscription**: POST `api-sandbox.normie.tech/v1/${your_project_id}/0/subscription/{subscriptionId}/cancel`
+
+
+
+### **5.5 Subscription Status**
+
+Subscriptions can have the following statuses:
+- Active: Subscription is currently active
+- Canceled: Subscription has been canceled
+- Past Due: Payment failed and is in grace period
+- Unpaid: Payment failed and grace period has ended
+
+### **5.6 Webhooks**
+
+For subscription events, you can set up webhooks to receive notifications for:
+- Subscription created
+- Subscription canceled
+- Payment succeeded
+- Payment failed
+- Subscription renewed
+
+Contact support@normie.tech to set up webhook endpoints for your project.
+
