@@ -42,7 +42,8 @@ Normie.tech is a **payment infrastructure platform** that enables Web3 businesse
  - Make sure to create an account on [sandbox.normie.tech](https://www.sandbox.normie.tech).
  - If you don't see the testnet network you are looking for reach out to us at support@normie.tech
  - Copy your projectId from the dashboard.
- - Go to [`https://api-sandbox.normie.tech/docs`](https://api-sandbox.normie.tech/docs) replace your projectId here.
+ - Go to [`https://api-sandbox.normie.tech/docs`](https://api-sandbox.normie.tech/docs) and for production here is the swagger docs [`https://api.normie.tech/docs`](https://api.normie.tech/docs) replace your projectId here.
+   
  - If your payouts want to be in a custom smart contract, reach out to us a support@normie.tech
 
  ### **`3. Sending API Requests to your project`**
